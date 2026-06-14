@@ -125,9 +125,7 @@ def show_expenses(expenses):
         return
     
     print("Expenses:")
-    
-    total = 0
-        
+      
     for index, expense in enumerate(expenses, start=1):
         print_expense(index, expense)
         
@@ -149,7 +147,7 @@ def show_by_category(expenses):
 
     print("Expenses:")
 
-    for index, expense in enumerate(expenses, start=1):
+    for index, expense in enumerate(filtered_expenses, start=1):
             print_expense(index, expense)
             
     total = calculate_total(filtered_expenses)        
