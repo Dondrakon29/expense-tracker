@@ -1,0 +1,20 @@
+[
+    {
+        "title": "Meat",
+        "amount": 350,
+        "category": "Food",
+        "date": "2026-06-10"
+    },
+    {
+        "title": "Wakl",
+        "amount": 333,
+        "category": "Walk",
+        "date": "2026-06-11"
+    },
+    {
+        "title": "Pizza",
+        "amount": 700,
+        "category": "Food",
+        "date": "2026-06-10"
+    }
+]
