@@ -8,14 +8,14 @@ A simple Python console project for tracking personal expenses.
 - Show all expenses
 - Show expenses by category
 - Delete expenses by number
+- Clear all expenses with confirmation
 - Save expenses to JSON file
 - Load expenses from JSON file
 - Validate user input with `try / except`
 - Validate date format using `datetime`
 - Calculate total expenses
 - Basic code refactoring with helper functions
-```markdown
-- Clear all expenses with confirmation
+
 ## Technologies
 
 - Python
@@ -33,6 +33,8 @@ A simple Python console project for tracking personal expenses.
 python expense_tracker.py
 ```
 
+3. Choose an option from the menu.
+
 ## Menu
 
 The application has a simple console menu:
@@ -44,6 +46,8 @@ The application has a simple console menu:
 4 - Delete expense
 5 - Clear all expenses
 0 - Exit
+```
+
 ## Expense example
 
 Each expense is stored as a dictionary:
