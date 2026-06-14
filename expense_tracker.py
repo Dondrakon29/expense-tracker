@@ -25,6 +25,7 @@ def show_menu():
     print("2 - Show expenses")
     print("3 - Show by category")
     print("4 - Delete expense")
+    print("5 - Clear all expenses")
     print("0 - Exit")
 
 def is_valid_date(date):
@@ -34,6 +35,22 @@ def is_valid_date(date):
         return True
     except ValueError:
         return False
+    
+def clear_expenses(expenses):
+    if not expenses:
+        print("No expenses to clear")
+        return
+
+    confirm = input("Are you sure? yes/no: ").strip().lower()
+
+    if confirm != "yes":
+        print("Clear cancelled")
+        return
+
+    expenses.clear()
+    save_expenses(expenses)
+
+    print("All expenses cleared")    
 
 def add_expense(expenses):
     title = input("Enter title: ").strip()
@@ -179,7 +196,9 @@ def run_app():
         elif choice == "3":
             show_by_category(expenses)
         elif choice == "4":
-            delete_expense(expenses)                
+            delete_expense(expenses)
+        elif choice == "5":
+            clear_expenses(expenses)                    
         elif choice == "0":
             print("Goodbye!")
             break

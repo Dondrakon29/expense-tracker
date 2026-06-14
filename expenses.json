@@ -1,20 +1,14 @@
 [
     {
         "title": "Meat",
-        "amount": 350,
+        "amount": 200,
         "category": "Food",
-        "date": "2026-06-10"
-    },
-    {
-        "title": "Wakl",
-        "amount": 333,
-        "category": "Walk",
-        "date": "2026-06-11"
+        "date": "2026-06-14"
     },
     {
         "title": "Pizza",
         "amount": 700,
         "category": "Food",
-        "date": "2026-06-10"
+        "date": "2026-06-13"
     }
 ]
